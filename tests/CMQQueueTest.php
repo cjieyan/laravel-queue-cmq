@@ -1,13 +1,13 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Tests;
+namespace LaravelQueueCMQ\Tests;
 
-use Freyo\LaravelQueueCMQ\Queue\CMQQueue;
-use Freyo\LaravelQueueCMQ\Queue\Connectors\CMQConnector;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Message;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Queue;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Topic;
-use Freyo\LaravelQueueCMQ\Queue\Jobs\CMQJob;
+use LaravelQueueCMQ\Queue\CMQQueue;
+use LaravelQueueCMQ\Queue\Connectors\CMQConnector;
+use LaravelQueueCMQ\Queue\Driver\Message;
+use LaravelQueueCMQ\Queue\Driver\Queue;
+use LaravelQueueCMQ\Queue\Driver\Topic;
+use LaravelQueueCMQ\Queue\Jobs\CMQJob;
 use Illuminate\Container\Container;
 use PHPUnit\Framework\TestCase;
 

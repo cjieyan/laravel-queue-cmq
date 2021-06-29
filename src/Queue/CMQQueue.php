@@ -1,12 +1,12 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue;
+namespace LaravelQueueCMQ\Queue;
 
-use Freyo\LaravelQueueCMQ\Queue\Driver\Account;
-use Freyo\LaravelQueueCMQ\Queue\Driver\CMQServerException;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Message;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Topic;
-use Freyo\LaravelQueueCMQ\Queue\Jobs\CMQJob;
+use LaravelQueueCMQ\Queue\Driver\Account;
+use LaravelQueueCMQ\Queue\Driver\CMQServerException;
+use LaravelQueueCMQ\Queue\Driver\Message;
+use LaravelQueueCMQ\Queue\Driver\Topic;
+use LaravelQueueCMQ\Queue\Jobs\CMQJob;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Queue\Queue as QueueContract;
 use Illuminate\Queue\Queue;
@@ -30,12 +30,12 @@ class CMQQueue extends Queue implements QueueContract
     protected $topicOptions;
 
     /**
-     * @var \Freyo\LaravelQueueCMQ\Queue\Driver\Account
+     * @var \LaravelQueueCMQ\Queue\Driver\Account
      */
     private $queueAccount;
 
     /**
-     * @var \Freyo\LaravelQueueCMQ\Queue\Driver\Account
+     * @var \LaravelQueueCMQ\Queue\Driver\Account
      */
     private $topicAccount;
 
@@ -52,8 +52,8 @@ class CMQQueue extends Queue implements QueueContract
     /**
      * CMQQueue constructor.
      *
-     * @param \Freyo\LaravelQueueCMQ\Queue\Driver\Account $queueAccount
-     * @param \Freyo\LaravelQueueCMQ\Queue\Driver\Account $topicAccount
+     * @param \LaravelQueueCMQ\Queue\Driver\Account $queueAccount
+     * @param \LaravelQueueCMQ\Queue\Driver\Account $topicAccount
      * @param array                                       $config
      *
      * @throws \ReflectionException
@@ -132,11 +132,11 @@ class CMQQueue extends Queue implements QueueContract
      * @param string $queue
      * @param array  $options
      *
-     * @throws \Freyo\LaravelQueueCMQ\Queue\Driver\CMQServerNetworkException
-     * @throws \Freyo\LaravelQueueCMQ\Queue\Driver\CMQServerException
+     * @throws \LaravelQueueCMQ\Queue\Driver\CMQServerNetworkException
+     * @throws \LaravelQueueCMQ\Queue\Driver\CMQServerException
      * @throws \Exception
      *
-     * @return \Freyo\LaravelQueueCMQ\Queue\Driver\Message|array
+     * @return \LaravelQueueCMQ\Queue\Driver\Message|array
      */
     public function pushRaw($payload, $queue = null, array $options = [])
     {

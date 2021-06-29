@@ -1,10 +1,10 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue\Jobs;
+namespace LaravelQueueCMQ\Queue\Jobs;
 
-use Freyo\LaravelQueueCMQ\Queue\CMQQueue;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Message;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Queue;
+use LaravelQueueCMQ\Queue\CMQQueue;
+use LaravelQueueCMQ\Queue\Driver\Message;
+use LaravelQueueCMQ\Queue\Driver\Queue;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Queue\Job as JobContract;
 use Illuminate\Queue\Jobs\Job;
@@ -12,12 +12,12 @@ use Illuminate\Queue\Jobs\Job;
 class CMQJob extends Job implements JobContract
 {
     /**
-     * @var \Freyo\LaravelQueueCMQ\Queue\CMQQueue
+     * @var \LaravelQueueCMQ\Queue\CMQQueue
      */
     protected $connection;
 
     /**
-     * @var \Freyo\LaravelQueueCMQ\Queue\Driver\Message
+     * @var \LaravelQueueCMQ\Queue\Driver\Message
      */
     protected $message;
 
@@ -25,9 +25,9 @@ class CMQJob extends Job implements JobContract
      * Create a new job instance.
      *
      * @param \Illuminate\Container\Container             $container
-     * @param \Freyo\LaravelQueueCMQ\Queue\CMQQueue       $connection
-     * @param \Freyo\LaravelQueueCMQ\Queue\Driver\Message $message
-     * @param \Freyo\LaravelQueueCMQ\Queue\Driver\Queue   $queue
+     * @param \LaravelQueueCMQ\Queue\CMQQueue       $connection
+     * @param \LaravelQueueCMQ\Queue\Driver\Message $message
+     * @param \LaravelQueueCMQ\Queue\Driver\Queue   $queue
      * @param string                                      $connectionName
      */
     public function __construct(Container $container, CMQQueue $connection, Message $message, Queue $queue, $connectionName)

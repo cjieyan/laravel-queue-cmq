@@ -45,7 +45,7 @@
   ```php
   'providers' => [
     // ...
-    Freyo\LaravelQueueCMQ\LaravelQueueCMQServiceProvider::class,
+    LaravelQueueCMQ\LaravelQueueCMQServiceProvider::class,
   ]
   ```
   
@@ -161,7 +161,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Freyo\LaravelQueueCMQ\Queue\Contracts\PlainPayload;
+use LaravelQueueCMQ\Queue\Contracts\PlainPayload;
 
 class CMQPlainJob implements ShouldQueue, PlainPayload
 {

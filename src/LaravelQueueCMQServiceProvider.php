@@ -1,8 +1,8 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ;
+namespace LaravelQueueCMQ;
 
-use Freyo\LaravelQueueCMQ\Queue\Connectors\CMQConnector;
+use LaravelQueueCMQ\Queue\Connectors\CMQConnector;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;

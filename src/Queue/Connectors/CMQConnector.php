@@ -1,9 +1,9 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue\Connectors;
+namespace LaravelQueueCMQ\Queue\Connectors;
 
-use Freyo\LaravelQueueCMQ\Queue\CMQQueue;
-use Freyo\LaravelQueueCMQ\Queue\Driver\Account;
+use LaravelQueueCMQ\Queue\CMQQueue;
+use LaravelQueueCMQ\Queue\Driver\Account;
 use Illuminate\Queue\Connectors\ConnectorInterface;
 use Illuminate\Support\Arr;
 

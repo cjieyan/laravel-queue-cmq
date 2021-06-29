@@ -1,6 +1,6 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue\Driver;
+namespace LaravelQueueCMQ\Queue\Driver;
 
 use Exception;
 

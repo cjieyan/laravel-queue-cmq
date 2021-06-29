@@ -1,6 +1,6 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue\Contracts;
+namespace LaravelQueueCMQ\Queue\Contracts;
 
 interface PlainPayload
 {

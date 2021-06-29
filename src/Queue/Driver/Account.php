@@ -1,6 +1,6 @@
 <?php
 
-namespace Freyo\LaravelQueueCMQ\Queue\Driver;
+namespace LaravelQueueCMQ\Queue\Driver;
 
 /*
 Account 对象非线程安全，如果多线程使用，需要每个线程单独初始化Account对象类
